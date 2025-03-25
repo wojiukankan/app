@@ -3,7 +3,7 @@
 - numprocs=1保证supervisor只启动一个任务
 
 supervisor配置如下 
-`
+```
 [program:laravel-worker]
  process_name=%(program_name)s_%(process_num)02d
  command=php artisan queue:work --tries=3 --max-time=3600
@@ -16,4 +16,4 @@ supervisor配置如下
  redirect_stderr=true
  stdout_logfile=/home/service/app/logs/worker.log
  stopwaitsecs=3600
-`
+```
