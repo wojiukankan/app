@@ -1,4 +1,4 @@
-### job路径：E:\WWW\app\app\Jobs\ProcessDeduction.php
+### job路径：app/Jobs/ProcessDeduction.php
 - user_id保证同时只会有一个任务修改相同用户余额
 - numprocs=1保证supervisor只启动一个任务
 
